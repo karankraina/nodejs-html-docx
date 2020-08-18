@@ -70,16 +70,16 @@ const generateMarkup = (markupText, { headerTitle }) => {
 export const createDoc = async (markupText, { headerTitle, outputFile }) => {
     return new Promise((resolve, reject) => {
         const inputMarkup = generateMarkup(markupText, { headerTitle })
-        var outputFile = `${outputFile || 'Report'}.docx`;
-        console.log({ outputFile })
+        var outputFileName = `${outputFile || 'Report'}.docx`;
+        console.log({ outputFileName })
         var docx = HtmlDocx.asBlob(inputMarkup);
         console.log({ docx })
-        fs.writeFile(outputFile, docx, function (err) {
+        fs.writeFile(outputFileName, docx, function (err) {
             if (err) {
                 reject(err)
                 return 0
             };
-            resolve(`${outputFile}`)
+            resolve(`${outputFileName}`)
         });
     })
 

@@ -1,7 +1,7 @@
 {
   "name": "nodejs-html-docx",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "nodejs-html-docx is a simple tool to create MS Word (.Docx) file with Header and Pagination in Footer. That too with Promise. Yayy!\r # Installation\r ```sh\r npm i nodejs-html-docx\r ```",
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/index.js",
@@ -9,7 +9,7 @@
     "prepublish": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Karan Raina",
   "license": "ISC",
   "babel": {
     "presets": [
@@ -24,5 +24,24 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "html-docx-js": "^0.3.1"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karankraina/nodejs-html-docx.git"
+  },
+  "keywords": [
+    "msword",
+    "nodejs",
+    "doc",
+    "html",
+    "to",
+    "doc"
+  ],
+  "bugs": {
+    "url": "https://github.com/karankraina/nodejs-html-docx/issues"
+  },
+  "homepage": "https://github.com/karankraina/nodejs-html-docx#readme"
 }

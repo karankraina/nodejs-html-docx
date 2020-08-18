@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "nodejs-html-docx",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -20,5 +20,9 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "html-docx-js": "^0.3.1"
   }
 }
